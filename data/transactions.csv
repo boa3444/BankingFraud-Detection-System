@@ -1,0 +1,9 @@
+transactionId,senderAccount,receiverAccount,deviceId,merchantId,amount,location,description,isFraud,timestamp
+1,A1001,A1002,D100,M100,25000,Delhi,merchant settlement,1,1718000001000
+2,A1002,A1003,D101,M101,24000,Mumbai,online transfer,1,1718000001000
+3,A1003,A1001,D102,M102,23000,Dubai,urgent international transfer,1,1718000001000
+4,A2001,A2002,D200,M200,1200,Delhi,grocery payment,0,1718000001000
+5,A3001,A3002,D300,M300,800,Noida,food payment,0,1718000001000
+6,A4001,A4002,D400,M400,1500,Pune,electricity payment,0,1718000001000
+7,A5001,A5002,D500,M500,2200,Chandigarh,shopping payment,0,1718000001000
+8,A6001,A6002,D600,M600,900,Jaipur,regular payment,0,1718000001000
