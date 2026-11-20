@@ -1,0 +1,85 @@
+module,scenario,input_size,algorithm,elapsed_us,comparisons,swaps_or_assignments,recursive_calls,peak_extra_bytes,notes
+Sorting,Small,100,MergeSort,58,356,1344,199,60800,pseudo-random
+Sorting,Small,100,QuickSort,293,4950,5049,199,6368,pseudo-random
+Searching,Small,100,BinarySearch_Iterative,4,0,0,0,0,200x hit
+Searching,Small,100,BinarySearch_Recursive,5,0,0,0,0,200x hit
+Sorting,Medium,1000,MergeSort,830,6912,19952,1999,608000,pseudo-random
+Sorting,Medium,1000,QuickSort,1418,25087,23105,1345,43040,pseudo-random
+Searching,Medium,1000,BinarySearch_Iterative,7,0,0,0,0,200x hit
+Searching,Medium,1000,BinarySearch_Recursive,8,0,0,0,0,200x hit
+Sorting,Large,5000,MergeSort,5572,47355,123616,9999,3040000,pseudo-random
+Sorting,Large,5000,QuickSort,20780,364646,351727,6661,213152,pseudo-random
+Searching,Large,5000,BinarySearch_Iterative,10,0,0,0,0,200x hit
+Searching,Large,5000,BinarySearch_Recursive,11,0,0,0,0,200x hit
+Sorting,Adversarial,1000,MergeSort,731,4932,19952,1999,608000,reverse-sorted
+Sorting,Adversarial,1000,QuickSort,15369,499500,250499,1999,63968,reverse-sorted
+Searching,Adversarial,1000,BinarySearch_Iterative,4,0,0,0,0,200x miss
+Searching,Adversarial,1000,BinarySearch_Recursive,9,0,0,0,0,200x miss
+StringMatching,Small,500,Naive,2,546,0,0,0,matches=5
+StringMatching,Small,500,RabinKarp,8,40,515,0,0,matches=5
+StringMatching,Small,500,FiniteAutomaton,26,500,9223,0,0,matches=5
+StringMatching,Small,500,KMP,3,500,31,0,0,matches=5
+StringMatching,Medium,5000,Naive,13,5507,0,0,0,matches=47
+StringMatching,Medium,5000,RabinKarp,77,376,5015,0,0,matches=47
+StringMatching,Medium,5000,FiniteAutomaton,45,5000,9223,0,0,matches=47
+StringMatching,Medium,5000,KMP,16,5000,240,0,0,matches=47
+StringMatching,Large,20000,Naive,49,22036,0,0,0,matches=186
+StringMatching,Large,20000,RabinKarp,313,1488,20015,0,0,matches=186
+StringMatching,Large,20000,FiniteAutomaton,113,20000,9223,0,0,matches=186
+StringMatching,Large,20000,KMP,60,20000,935,0,0,matches=186
+StringMatching,Adversarial,5000,Naive,336,129376,0,0,0,matches=1
+StringMatching,Adversarial,5000,RabinKarp,75,26,5052,0,0,matches=1
+StringMatching,Adversarial,5000,FiniteAutomaton,170,5001,89882,0,0,matches=1
+StringMatching,Adversarial,5000,KMP,18,5001,5002,0,0,matches=1
+DivideAndConquer,Small,100,MaxSubarray_DC,8,870,0,199,768,net-suspicious-window
+DivideAndConquer,Small,100,MaxSubarray_Kadane,1,198,0,0,0,linear-baseline
+DivideAndConquer,Medium,1000,MaxSubarray_DC,72,11974,0,1999,768,net-suspicious-window
+DivideAndConquer,Medium,1000,MaxSubarray_Kadane,8,1998,0,0,0,linear-baseline
+DivideAndConquer,Large,5000,MaxSubarray_DC,369,71806,0,9999,768,net-suspicious-window
+DivideAndConquer,Large,5000,MaxSubarray_Kadane,38,9998,0,0,0,linear-baseline
+DivideAndConquer,Adversarial,1000,MaxSubarray_DC,66,11974,0,1999,768,net-suspicious-window
+DivideAndConquer,Adversarial,1000,MaxSubarray_Kadane,6,1998,0,0,0,linear-baseline
+DivideAndConquer,Small,20,Celebrity_Elimination,0,38,0,0,0,O(n)
+DivideAndConquer,Small,20,Celebrity_BruteForce,0,29,0,0,0,O(n^2)
+DivideAndConquer,Medium,80,Celebrity_Elimination,0,158,0,0,0,O(n)
+DivideAndConquer,Medium,80,Celebrity_BruteForce,0,119,0,0,0,O(n^2)
+DivideAndConquer,Large,200,Celebrity_Elimination,1,398,0,0,0,O(n)
+DivideAndConquer,Large,200,Celebrity_BruteForce,1,299,0,0,0,O(n^2)
+DivideAndConquer,Adversarial,200,Celebrity_Elimination,1,398,0,0,0,O(n)
+DivideAndConquer,Adversarial,200,Celebrity_BruteForce,1,398,0,0,0,O(n^2)
+DivideAndConquer,Small,16,Matrix_Classical,19,0,4096,0,2048,square
+DivideAndConquer,Small,16,Matrix_Strassen,22,0,4096,1,2048,square
+DivideAndConquer,Medium,32,Matrix_Classical,157,0,32768,0,8192,square
+DivideAndConquer,Medium,32,Matrix_Strassen,166,0,28672,8,8192,square
+DivideAndConquer,Large,64,Matrix_Classical,1167,0,262144,0,32768,square
+DivideAndConquer,Large,64,Matrix_Strassen,1112,0,200704,57,32768,square
+DivideAndConquer,Adversarial,63,Matrix_Classical,1101,0,250047,0,31752,non-pow2-pad
+DivideAndConquer,Adversarial,63,Matrix_Strassen,1111,0,200704,57,32768,non-pow2-pad
+Greedy,Small,50,ActivitySelection,6,205,322,99,2400,mixed
+Greedy,Small,50,IntervalPartitioning,6,248,293,99,3200,mixed
+Greedy,Small,50,FractionalKnapsack,7,221,317,99,3200,triage-allocation
+Greedy,Small,500,HuffmanRoundTrip,72,54,1021,0,67432,normal
+Greedy,Small,10,Kruskal_MST,8,252,358,117,1888,edges=59
+Greedy,Small,10,Prim_MST,10,556,253,0,1904,edges=59
+Greedy,Small,10,Dijkstra,2,76,10,0,120,edges=59
+Greedy,Medium,250,ActivitySelection,22,1415,2114,499,12000,mixed
+Greedy,Medium,250,IntervalPartitioning,25,2151,2248,499,16000,mixed
+Greedy,Medium,250,FractionalKnapsack,35,1680,2148,499,16000,triage-allocation
+Greedy,Medium,2500,HuffmanRoundTrip,31,54,5021,0,73832,normal
+Greedy,Medium,50,Kruskal_MST,32,2062,2527,597,9568,edges=299
+Greedy,Medium,50,Prim_MST,89,4112,1898,0,9584,edges=299
+Greedy,Medium,50,Dijkstra,46,751,237,0,600,edges=299
+Greedy,Large,1000,ActivitySelection,106,7762,10167,1999,48000,mixed
+Greedy,Large,1000,IntervalPartitioning,136,13545,12190,1999,64000,mixed
+Greedy,Large,1000,FractionalKnapsack,157,8709,10590,1999,64000,triage-allocation
+Greedy,Large,10000,HuffmanRoundTrip,95,54,20021,0,97832,normal
+Greedy,Large,200,Kruskal_MST,133,10806,12539,2397,38368,edges=1199
+Greedy,Large,200,Prim_MST,812,22031,10827,0,38384,edges=1199
+Greedy,Large,200,Dijkstra,649,3909,1417,0,2400,edges=1199
+Greedy,Adversarial,250,ActivitySelection,18,1261,1995,499,12000,all-overlapping
+Greedy,Adversarial,250,IntervalPartitioning,20,1509,1994,499,16000,all-overlapping
+Greedy,Adversarial,250,FractionalKnapsack,32,1680,2148,499,16000,triage-allocation
+Greedy,Adversarial,2500,HuffmanRoundTrip,29,0,5000,0,68332,skewed
+Greedy,Adversarial,50,Kruskal_MST,30,2062,2527,597,9568,edges=299
+Greedy,Adversarial,50,Prim_MST,92,4112,1898,0,9584,edges=299
+Greedy,Adversarial,50,Dijkstra,46,751,237,0,600,edges=299
